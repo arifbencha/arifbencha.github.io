@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Northern Valley Islamic Center — Closter, NJ</title>
+
+<!-- SEO -->
+<meta name="description" content="Northern Valley Islamic Center is building Bergen County's first dedicated Islamic center in Closter, NJ — serving 15,000+ Muslims across 22+ Northern Valley communities. Join our building fund campaign." />
+<meta name="keywords" content="Northern Valley Islamic Center, NVIC, mosque New Jersey, Islamic center Closter NJ, Bergen County mosque, Muslim community NJ, masjid Closter" />
+<link rel="canonical" href="https://www.nvicenter.org/" />
+
+<!-- OPEN GRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Northern Valley Islamic Center" />
+<meta property="og:url" content="https://www.nvicenter.org/" />
+<meta property="og:title" content="Northern Valley Islamic Center — Help Us Build a Masjid in Closter, NJ" />
+<meta property="og:description" content="15,000+ Muslims. 22+ towns. Zero dedicated Islamic centers. Be part of history — support NVIC's building fund campaign in Closter, NJ." />
+<meta property="og:locale" content="en_US" />
+
+<!-- TWITTER -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Northern Valley Islamic Center — Help Us Build a Masjid in Closter, NJ" />
+<meta name="twitter:description" content="15,000+ Muslims. 22+ towns. Zero dedicated Islamic centers. Support NVIC's building fund in Closter, NJ." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Cinzel:wght@400;600&family=Noto+Naskh+Arabic:wght@400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green-deep: #0a2e14;
+  --green-dark: #0f3d1a;
+  --green-mid: #1a6b2a;
+  --green-bright: #2e8b3e;
+  --green-light: #4CAF50;
+  --green-pale: #e8f5e9;
+  --gold: #C9A13A;
+  --gold-light: #E8C96B;
+  --gold-pale: #f5e8c0;
+  --cream: #f9faf6;
+  --white: #ffffff;
+  --text-dark: #0a1f0e;
+  --text-mid: #2e4a33;
+  --border: rgba(76,175,80,0.2);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Cormorant Garamond', serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* ── MOBILE NAV TOGGLE ── */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 1001;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--gold-light);
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+/* ── FUNDRAISING BANNER ── */
+#fundraise-bar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1100;
+  background: linear-gradient(90deg, #1a4d1a 0%, #2e7d32 40%, #1a4d1a 100%);
+  border-bottom: 1px solid rgba(201,161,58,0.3);
+  display: flex; align-items: center; justify-content: center;
+  gap: 1rem;
+  padding: 9px 5%;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#fundraise-bar .fb-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--gold-light);
+  white-space: nowrap;
+}
+#fundraise-bar .fb-message {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.92);
+}
+#fundraise-bar .fb-cta {
+  background: var(--gold);
+  color: var(--green-deep);
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  padding: 6px 16px;
+  border-radius: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.25s;
+}
+#fundraise-bar .fb-cta:hover { background: var(--gold-light); }
+#fundraise-bar .fb-close {
+  position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+  background: none; border: none; cursor: pointer;
+  color: rgba(255,255,255,0.45); font-size: 1rem;
+  padding: 2px 6px;
+  transition: color 0.2s;
+}
+#fundraise-bar .fb-close:hover { color: rgba(255,255,255,0.85); }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 38px; left: 0; right: 0; z-index: 1000;
+  background: rgba(10,46,20,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(76,175,80,0.2);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5%;
+  height: 68px;
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+}
+.nav-brand img {
+  height: 48px;
+  width: auto;
+}
+.nav-brand-text {
+  font-family: 'Cinzel', serif;
+  color: var(--gold-light);
+  font-size: 0.95rem;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+.nav-brand-text span { display:block; font-size:0.55rem; letter-spacing:0.18em; color:rgba(232,201,107,0.5); text-transform:uppercase; }
+.nav-links { display:flex; gap:1.8rem; list-style:none; align-items:center; }
+.nav-links a {
+  color: rgba(255,255,255,0.7);
+  text-decoration:none;
+  font-family:'Cormorant Garamond',serif;
+  font-size:1rem;
+  font-weight:500;
+  letter-spacing:0.04em;
+  transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--green-light); }
+.nav-donate {
+  background: var(--green-bright) !important;
+  color: var(--white) !important;
+  padding: 8px 20px !important;
+  border-radius: 3px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  font-family:'Cinzel',serif !important;
+  font-size:0.75rem !important;
+  animation: navPulse 2.8s ease-in-out infinite;
+}
+.nav-donate:hover { background: var(--green-light) !important; }
+@keyframes navPulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(76,175,80,0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(76,175,80,0); }
+}
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh;
+  padding-top: 106px;
+  background: var(--green-deep);
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-geo {
+  position: absolute; inset: 0;
+  opacity: 0.06;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cpath d='M60 10 L110 35 L110 85 L60 110 L10 85 L10 35 Z' fill='none' stroke='%234CAF50' stroke-width='1'/%3E%3Cpath d='M60 25 L95 42.5 L95 77.5 L60 95 L25 77.5 L25 42.5 Z' fill='none' stroke='%234CAF50' stroke-width='0.8'/%3E%3Ccircle cx='60' cy='60' r='20' fill='none' stroke='%234CAF50' stroke-width='0.6'/%3E%3C/svg%3E");
+  background-size: 120px 120px;
+}
+.hero-glow {
+  position: absolute;
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(76,175,80,0.12) 0%, transparent 70%);
+  top: 50%; left: 50%; transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center;
+  padding: 0 5%;
+  animation: fadeUp 1.2s ease both;
+}
+.hero-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 1.2s ease 0.1s both;
+  filter: drop-shadow(0 0 30px rgba(76,175,80,0.3));
+}
+.islamic-date-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(76,175,80,0.12);
+  border: 1px solid rgba(76,175,80,0.35);
+  border-radius: 100px;
+  padding: 6px 20px;
+  margin-bottom: 1.5rem;
+  color: var(--green-light);
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  animation: fadeUp 1.2s ease 0.15s both;
+}
+.islamic-date-badge .crescent { font-size: 1.1rem; }
+.arabic-header {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  font-size: 2.6rem;
+  color: var(--green-light);
+  opacity: 0.7;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+  animation: fadeUp 1.2s ease 0.2s both;
+}
+h1.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(2rem, 5.5vw, 4.5rem);
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  animation: fadeUp 1.2s ease 0.3s both;
+}
+.hero-sub {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.55);
+  max-width: 580px; margin: 0 auto 1rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  animation: fadeUp 1.2s ease 0.4s both;
+}
+.hero-building-notice {
+  display: inline-block;
+  background: rgba(201,161,58,0.15);
+  border: 1px solid rgba(201,161,58,0.4);
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin-bottom: 2rem;
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  animation: fadeUp 1.2s ease 0.45s both;
+}
+.hero-ctas { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; animation: fadeUp 1.2s ease 0.5s both; }
+.btn-primary {
+  background: var(--green-bright);
+  color: var(--white);
+  border: none; cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 14px 36px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(76,175,80,0.3); }
+.btn-outline {
+  background: transparent;
+  color: var(--green-light);
+  border: 1px solid rgba(76,175,80,0.5);
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 14px 36px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.btn-outline:hover { border-color: var(--green-light); background: rgba(76,175,80,0.08); transform: translateY(-2px); }
+.btn-gold {
+  background: var(--gold);
+  color: var(--green-deep);
+  border: none; cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 14px 36px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+.hero-fund-card {
+  background: rgba(76,175,80,0.08);
+  border: 1px solid rgba(76,175,80,0.3);
+  border-radius: 6px;
+  padding: 1.3rem 2rem;
+  max-width: 500px;
+  margin: 2rem auto 0;
+  text-align: left;
+  animation: fadeUp 1.2s ease 0.6s both;
+}
+.hero-fund-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--green-light);
+  margin-bottom: 0.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.hero-fund-label span { color: rgba(255,255,255,0.4); }
+.hero-fund-amounts { display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.6rem; }
+.hero-fund-raised {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+}
+.hero-fund-goal {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.4);
+}
+.hero-fund-track {
+  height: 6px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.hero-fund-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+  border-radius: 100px;
+  width: 0%;
+  animation: heroFill 2s ease-out 1.2s both;
+}
+@keyframes heroFill { from { width: 0; } to { width: 60%; } }
+.hero-fund-meta {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.35);
+  display: flex; justify-content: space-between;
+}
+.hero-fund-meta strong { color: rgba(255,255,255,0.65); }
+.hero-scroll {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: rgba(255,255,255,0.3); font-size: 0.65rem; letter-spacing: 0.2em;
+  font-family: 'Cinzel', serif;
+  animation: pulse 2.5s ease infinite;
+}
+.scroll-line { width: 1px; height: 36px; background: linear-gradient(to bottom, rgba(76,175,80,0.5), transparent); }
+
+/* ── PRAYER TIMES ── */
+#prayers {
+  background: var(--green-dark);
+  padding: 4rem 5%;
+  position: relative;
+  overflow: hidden;
+}
+#prayers::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 5 L75 22.5 L75 57.5 L40 75 L5 57.5 L5 22.5 Z' fill='none' stroke='%234CAF50' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-size: 80px 80px;
+  opacity: 0.04;
+}
+.prayers-wrap { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+.section-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  color: var(--green-light);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.section-title-light {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.prayer-disclaimer {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.4);
+  margin-bottom: 2rem;
+  font-style: italic;
+  max-width: 700px;
+  line-height: 1.6;
+}
+.prayer-disclaimer strong { color: var(--gold-light); font-style: normal; }
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+.prayer-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(76,175,80,0.2);
+  border-radius: 4px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.prayer-card.active {
+  background: rgba(76,175,80,0.12);
+  border-color: var(--green-light);
+}
+.prayer-card.active::after {
+  content: 'CURRENT';
+  position: absolute; top: 8px; right: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  color: var(--green-light);
+  background: rgba(76,175,80,0.2);
+  padding: 2px 6px;
+  border-radius: 100px;
+}
+.prayer-card:hover { border-color: var(--green-light); transform: translateY(-3px); }
+.prayer-arabic {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  font-size: 1.3rem;
+  color: var(--green-light);
+  margin-bottom: 0.2rem;
+}
+.prayer-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 0.6rem;
+}
+.prayer-time {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.prayer-time span { font-size: 0.85rem; color: rgba(255,255,255,0.45); }
+.prayer-loading {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.35);
+}
+.sunrise-bar {
+  margin-top: 1.5rem;
+  background: rgba(201,161,58,0.08);
+  border: 1px solid rgba(201,161,58,0.25);
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.sunrise-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
+}
+.sunrise-label p { font-family: 'Cormorant Garamond', serif; font-size: 0.9rem; color: rgba(255,255,255,0.45); letter-spacing: 0; margin-top: 2px; }
+.sunrise-time {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+.live-clock {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.4);
+  margin-top: 1.2rem;
+  text-align: right;
+}
+
+/* ── DONATION CTA STRIP ── */
+.donate-strip {
+  background: linear-gradient(135deg, var(--green-mid), var(--green-bright));
+  padding: 3rem 5%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.donate-strip::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='15' fill='none' stroke='%23ffffff' stroke-width='0.3'/%3E%3C/svg%3E");
+  background-size: 60px 60px;
+  opacity: 0.05;
+}
+.donate-strip-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+.donate-strip h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+.donate-strip p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+.donate-strip .btn-gold { font-size: 0.85rem; padding: 16px 44px; }
+
+/* ── ANNOUNCEMENTS ── */
+#announcements {
+  background: var(--white);
+  padding: 5rem 5%;
+}
+.announce-inner { max-width: 900px; margin: 0 auto; }
+.announce-inner .section-eyebrow { color: var(--green-mid); text-align: center; }
+.announce-inner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.announce-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.announce-card {
+  background: var(--green-pale);
+  border: 1px solid rgba(76,175,80,0.15);
+  border-left: 4px solid var(--green-bright);
+  border-radius: 4px;
+  padding: 1.5rem 2rem;
+}
+.announce-card .announce-date {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  color: var(--green-mid);
+  margin-bottom: 0.4rem;
+}
+.announce-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--green-deep);
+  margin-bottom: 0.4rem;
+}
+.announce-card p {
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+  font-weight: 300;
+}
+.announce-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--green-pale);
+  border: 1px dashed rgba(76,175,80,0.3);
+  border-radius: 6px;
+}
+.announce-empty p {
+  font-size: 1.1rem;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+.announce-empty .emoji { font-size: 2rem; margin-bottom: 0.8rem; }
+
+/* ── STATS / NEED ── */
+#need {
+  background: var(--cream);
+  padding: 6rem 5%;
+}
+.need-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.need-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.stat-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.8rem 1.3rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.stat-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(to right, var(--green-mid), var(--green-light));
+}
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.stat-label {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.4;
+}
+.need-text .section-eyebrow { color: var(--green-mid); }
+.need-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 1.3rem;
+  line-height: 1.2;
+}
+.need-text p {
+  font-size: 1.1rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.need-divider { width: 50px; height: 2px; background: var(--green-bright); margin: 1.2rem 0; }
+
+/* ── COMMUNITY ── */
+#community {
+  background: var(--green-deep);
+  padding: 6rem 5%;
+  position: relative;
+  overflow: hidden;
+}
+#community::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M100 20 L180 60 L180 140 L100 180 L20 140 L20 60 Z' fill='none' stroke='%234CAF50' stroke-width='0.6'/%3E%3Ccircle cx='100' cy='100' r='30' fill='none' stroke='%234CAF50' stroke-width='0.4'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  opacity: 0.03;
+}
+.community-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+.community-inner .section-title-light { text-align: center; margin-bottom: 0.5rem; }
+.community-inner .section-eyebrow { text-align: center; }
+.community-lead {
+  text-align: center; max-width: 620px; margin: 0 auto 3.5rem;
+  font-size: 1.1rem; color: rgba(255,255,255,0.5); line-height: 1.8; font-weight: 300;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.3rem;
+}
+.benefit-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(76,175,80,0.15);
+  border-radius: 4px;
+  padding: 2.2rem 1.8rem;
+  transition: all 0.35s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s, background 0.35s, border-color 0.35s;
+}
+.benefit-card:hover {
+  background: rgba(76,175,80,0.07);
+  border-color: rgba(76,175,80,0.4);
+  transform: translateY(-4px) !important;
+}
+.benefit-icon {
+  width: 48px; height: 48px;
+  background: rgba(76,175,80,0.12);
+  border: 1px solid rgba(76,175,80,0.25);
+  border-radius: 3px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+.benefit-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 0.6rem;
+}
+.benefit-card p {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ── SERVICES ── */
+#services {
+  background: var(--white);
+  padding: 6rem 5%;
+}
+.services-inner { max-width: 1100px; margin: 0 auto; }
+.services-inner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 3rem;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+}
+.service-card {
+  border: 1px solid rgba(15,61,26,0.1);
+  border-radius: 4px;
+  padding: 1.8rem 1.3rem;
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s, border-color 0.3s, box-shadow 0.3s;
+}
+.service-card:hover { border-color: var(--green-bright); box-shadow: 0 8px 32px rgba(76,175,80,0.1); }
+.service-card .svc-num {
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--green-mid);
+  margin-bottom: 0.8rem;
+}
+.service-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: var(--green-deep);
+  margin-bottom: 0.6rem;
+}
+.service-card p {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.service-line { width: 28px; height: 2px; background: var(--green-bright); margin-bottom: 0.8rem; }
+
+/* ── DONATE ── */
+#donate {
+  background: var(--cream);
+  padding: 6rem 5%;
+}
+.donate-inner { max-width: 1000px; margin: 0 auto; }
+.donate-goal-banner {
+  background: linear-gradient(135deg, var(--green-deep) 0%, var(--green-dark) 100%);
+  border: 1px solid rgba(76,175,80,0.3);
+  border-radius: 6px;
+  padding: 2rem 2.5rem;
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.dgb-left .dgb-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  color: var(--green-light);
+  margin-bottom: 0.4rem;
+}
+.dgb-left h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+.dgb-left p { font-size: 0.92rem; color: rgba(255,255,255,0.45); font-weight: 300; line-height: 1.6; }
+.dgb-right { text-align: right; }
+.dgb-amounts {
+  display: flex; align-items: baseline; gap: 0.5rem;
+  justify-content: flex-end; margin-bottom: 0.7rem;
+}
+.dgb-raised {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem; font-weight: 700;
+  color: var(--gold-light); line-height: 1;
+}
+.dgb-goal { font-size: 0.95rem; color: rgba(255,255,255,0.35); }
+.dgb-track {
+  height: 8px; background: rgba(255,255,255,0.08);
+  border-radius: 100px; overflow: hidden; margin-bottom: 0.5rem;
+}
+.dgb-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+  border-radius: 100px; width: 60%;
+  animation: dgbFill 2s ease-out 0.3s both;
+}
+@keyframes dgbFill { from { width: 0; } to { width: 60%; } }
+.dgb-meta { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+.dgb-meta strong { color: rgba(255,255,255,0.65); }
+
+.donate-head { text-align: center; margin-bottom: 3rem; }
+.donate-head h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 600;
+  color: var(--green-deep);
+  margin-bottom: 0.8rem;
+}
+.donate-head p {
+  font-size: 1.1rem; color: var(--text-mid); font-weight: 300; max-width: 560px; margin: 0 auto; line-height: 1.7;
+}
+.donate-tabs {
+  display: flex; gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  width: fit-content; margin: 0 auto 2.5rem;
+}
+.tab-btn {
+  background: transparent;
+  border: none; cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text-mid);
+  padding: 12px 26px;
+  transition: all 0.25s;
+}
+.tab-btn.active {
+  background: var(--green-dark);
+  color: var(--green-light);
+}
+.donation-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.3rem; }
+.tier-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.2rem 1.8rem;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+}
+.tier-card.featured {
+  border-color: var(--green-bright);
+  box-shadow: 0 12px 48px rgba(76,175,80,0.12);
+}
+.tier-card.featured::before {
+  content: 'MOST POPULAR';
+  position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+  background: var(--green-bright);
+  color: var(--white);
+  font-family: 'Cinzel', serif;
+  font-size: 0.52rem;
+  letter-spacing: 0.16em;
+  padding: 4px 14px;
+  border-radius: 0 0 4px 4px;
+  white-space: nowrap;
+}
+.tier-name {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--green-mid);
+  margin-bottom: 0.6rem;
+}
+.tier-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--green-deep);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+.tier-price sup { font-size: 1.1rem; vertical-align: top; margin-top: 0.5rem; }
+.tier-period {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  margin-bottom: 1.3rem;
+}
+.tier-perks { list-style: none; margin-bottom: 1.8rem; }
+.tier-perks li {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-weight: 300;
+}
+.tier-perks li::before { content: '✦ '; color: var(--green-mid); font-size: 0.55rem; vertical-align: middle; }
+.tier-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(15,61,26,0.08); }
+.one-time-donate { margin-top: 2rem; text-align: center; }
+.one-time-donate p { font-size: 1rem; color: var(--text-mid); margin-bottom: 1.3rem; }
+.amount-buttons { display: flex; gap: 0.7rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.3rem; }
+.amt-btn {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 10px 22px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--green-deep);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.amt-btn:hover, .amt-btn.active { background: var(--green-dark); color: var(--green-light); border-color: var(--green-dark); }
+.donate-tax-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  font-weight: 300;
+}
+.donate-tax-note strong { color: var(--green-deep); font-weight: 600; }
+
+/* ── MAP / LOCATION ── */
+#location {
+  background: var(--green-deep);
+  padding: 6rem 5%;
+}
+.location-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
+.location-text .section-eyebrow { color: var(--green-light); }
+.location-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--white);
+  margin-bottom: 1.3rem;
+}
+.location-text p {
+  font-size: 1.05rem; color: rgba(255,255,255,0.5); line-height: 1.8; margin-bottom: 1.5rem; font-weight: 300;
+}
+.address-block {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(76,175,80,0.18);
+  border-radius: 4px;
+  padding: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+.address-block p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--green-light);
+  margin-bottom: 0 !important;
+  line-height: 1.6;
+}
+.address-block strong {
+  font-family: 'Cinzel', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--green-light);
+  display: block;
+  margin-bottom: 4px;
+}
+.map-container {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(76,175,80,0.18);
+  height: 360px;
+}
+.map-container iframe { width: 100%; height: 100%; border: none; }
+.directions-btn {
+  display: block; width: 100%;
+  background: var(--green-bright);
+  color: var(--white);
+  text-align: center;
+  padding: 14px;
+  font-family: 'Cinzel', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  transition: background 0.3s;
+}
+.directions-btn:hover { background: var(--green-light); }
+
+/* ── FOOTER ── */
+footer {
+  background: #050f08;
+  padding: 4rem 5% 2rem;
+  border-top: 1px solid rgba(76,175,80,0.12);
+}
+.footer-grid {
+  max-width: 1100px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 1.5rem;
+}
+.footer-brand .nav-brand { font-size: 1rem; }
+.footer-brand p { font-size: 0.88rem; color: rgba(255,255,255,0.3); margin-top: 0.8rem; line-height: 1.7; }
+.footer-col h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  color: var(--green-light);
+  margin-bottom: 1rem;
+}
+.footer-col a {
+  display: block;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  font-size: 0.92rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+.footer-col a:hover { color: var(--green-light); }
+.footer-bottom {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem;
+}
+.footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.2); }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%,100% { opacity: 0.4; } 50% { opacity: 0.9; }
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px) {
+  .prayer-grid { grid-template-columns: repeat(3, 1fr); }
+  .need-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .benefits-grid { grid-template-columns: 1fr 1fr; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .donation-tiers { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .location-inner { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .donate-goal-banner { grid-template-columns: 1fr; }
+  .dgb-right { text-align: left; }
+  .dgb-amounts { justify-content: flex-start; }
+}
+@media(max-width:640px) {
+  .prayer-grid { grid-template-columns: 1fr 1fr; }
+  .benefits-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .nav-links { 
+    display: none; 
+    position: fixed;
+    top: 106px;
+    left: 0; right: 0;
+    background: rgba(10,46,20,0.98);
+    flex-direction: column;
+    padding: 1.5rem 5%;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(76,175,80,0.2);
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .hero-logo { width: 120px; }
+  .arabic-header { font-size: 2rem; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .donate-tabs { flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 100px; }
+  .hero-fund-card { padding: 1rem 1.2rem; }
+  #fundraise-bar .fb-message { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ FUNDRAISING BANNER ══ -->
+<div id="fundraise-bar">
+  <span class="fb-label">🕌&nbsp; HELP BUILD OUR MASJID</span>
+  <span class="fb-message">Be part of history — help build Northern Valley's first Islamic Center in Closter, NJ</span>
+  <a href="#donate" class="fb-cta">Donate Now</a>
+  <button class="fb-close" onclick="document.getElementById('fundraise-bar').style.display='none'; document.querySelector('nav').style.top='0';" aria-label="Close banner">✕</button>
+</div>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#hero" class="nav-brand">
+    <img src="logo.png" alt="NVIC Logo">
+    <div class="nav-brand-text">
+      Northern Valley Islamic Center
+      <span>Closter, New Jersey</span>
+    </div>
+  </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#prayers">Prayer Times</a></li>
+    <li><a href="#announcements">News</a></li>
+    <li><a href="#need">About</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#location">Visit</a></li>
+    <li><a href="#donate" class="nav-donate">Donate</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-geo"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <img src="logo.png" alt="Northern Valley Islamic Center Logo" class="hero-logo">
+
+    <div class="islamic-date-badge">
+      <span class="crescent">☽</span>
+      <span id="hijri-date">Loading Islamic Date...</span>
+      <span class="crescent">☾</span>
+    </div>
+
+    <div class="arabic-header">مركز الوادي الشمالي الإسلامي</div>
+    <h1 class="hero-title">Northern Valley<br>Islamic Center</h1>
+    <p class="hero-sub">A spiritual home for the Muslim community of Northern Bergen County — welcoming all in faith, service, and unity.</p>
+
+    <div class="hero-building-notice">🏗️ &nbsp; CURRENTLY ACQUIRING PROPERTY · BUILDING OUR FUTURE TOGETHER</div>
+
+    <div class="hero-ctas">
+      <a href="#donate" class="btn-primary">Support Our Mission</a>
+      <a href="#prayers" class="btn-outline">View Prayer Times</a>
+    </div>
+
+    <div class="hero-fund-card">
+      <div class="hero-fund-label">
+        MASJID BUILDING FUND
+        <span>501(c)(3) · Tax Deductible</span>
+      </div>
+      <div class="hero-fund-track"><div class="hero-fund-fill"></div></div>
+      <div class="hero-fund-meta">
+        <span><strong>Every donation counts</strong></span>
+        <span><strong>Your gift moves us forward</strong></span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    SCROLL
+  </div>
+</section>
+
+<!-- ══ PRAYER TIMES ══ -->
+<section id="prayers">
+  <div class="prayers-wrap">
+    <p class="section-eyebrow">Daily Salat Schedule</p>
+    <h2 class="section-title-light">Prayer Times — Closter, NJ</h2>
+    <p class="prayer-disclaimer">
+      <strong>Please note:</strong> These prayer times are provided for informational purposes only and are based on astronomical calculations for Closter, NJ. They do not represent actual congregational (jama'ah) prayer times at the masjid, as the Northern Valley Islamic Center is still in the process of being established. Insha'Allah, congregational prayer schedules will be announced once the center is open.
+    </p>
+
+    <div class="prayer-grid">
+      <div class="prayer-card" id="card-fajr">
+        <div class="prayer-arabic">الفجر</div>
+        <div class="prayer-name">FAJR</div>
+        <div class="prayer-time" id="time-fajr"><span class="prayer-loading">Loading...</span></div>
+      </div>
+      <div class="prayer-card" id="card-dhuhr">
+        <div class="prayer-arabic">الظهر</div>
+        <div class="prayer-name">DHUHR</div>
+        <div class="prayer-time" id="time-dhuhr"><span class="prayer-loading">Loading...</span></div>
+      </div>
+      <div class="prayer-card" id="card-asr">
+        <div class="prayer-arabic">العصر</div>
+        <div class="prayer-name">ASR</div>
+        <div class="prayer-time" id="time-asr"><span class="prayer-loading">Loading...</span></div>
+      </div>
+      <div class="prayer-card" id="card-maghrib">
+        <div class="prayer-arabic">المغرب</div>
+        <div class="prayer-name">MAGHRIB</div>
+        <div class="prayer-time" id="time-maghrib"><span class="prayer-loading">Loading...</span></div>
+      </div>
+      <div class="prayer-card" id="card-isha">
+        <div class="prayer-arabic">العشاء</div>
+        <div class="prayer-name">ISHA</div>
+        <div class="prayer-time" id="time-isha"><span class="prayer-loading">Loading...</span></div>
+      </div>
+    </div>
+
+    <div class="sunrise-bar">
+      <div class="sunrise-label">
+        ☀️&nbsp; Sunrise
+        <p>The sun rises in Closter, NJ</p>
+      </div>
+      <div class="sunrise-time" id="time-sunrise">--:--</div>
+    </div>
+
+    <div class="live-clock" id="clock">Loading time...</div>
+  </div>
+</section>
+
+<!-- ── DONATE CTA STRIP 1 ── -->
+<div class="donate-strip">
+  <div class="donate-strip-inner">
+    <h2>Your Donation Builds a House of Allah</h2>
+    <p>We are in the critical phase of acquiring property for the Northern Valley Islamic Center. A former church in Closter, NJ is being transformed into a masjid for the community. Every dollar brings us closer to opening our doors. Your contribution is not just a donation — it's a sadaqah jariyah.</p>
+    <a href="https://us.mohid.co/nj/njrgn/nvic/masjid/online/vfr/campaign/northern_valley_islamic_center_masjid_purchase" target="_blank" class="btn-gold">Make a One-Time Donation</a>
+  </div>
+</div>
+
+<!-- ══ ANNOUNCEMENTS ══ -->
+<section id="announcements">
+  <div class="announce-inner">
+    <p class="section-eyebrow">Latest Updates</p>
+    <h2>Announcements</h2>
+    <div class="announce-list" id="announcements-list">
+      <div class="announce-empty">
+        <div class="emoji">🕌</div>
+        <p>No announcements at this time. Stay tuned — exciting updates about our masjid are coming soon, insha'Allah!</p>
+        <p style="margin-top:0.8rem;font-size:0.9rem;color:var(--green-mid);">Follow us for the latest news on our journey to build the Northern Valley Islamic Center.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ WHY WE'RE NEEDED ══ -->
+<section id="need">
+  <div class="need-inner">
+    <div class="need-stats">
+      <div class="stat-card">
+        <div class="stat-num">15,000+</div>
+        <div class="stat-label">Muslims living in Northern Bergen County, NJ</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Dedicated mosque serving the Northern Valley communities</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">22+</div>
+        <div class="stat-label">Towns in the Northern Valley area we will serve</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">30%</div>
+        <div class="stat-label">Growth in Muslim population in Bergen County since 2015</div>
+      </div>
+    </div>
+    <div class="need-text">
+      <p class="section-eyebrow">Why NVIC Matters</p>
+      <h2>A Growing Community Deserves a Permanent Home</h2>
+      <div class="need-divider"></div>
+      <p>The Northern Valley of New Jersey — encompassing Closter, Demarest, Norwood, Harrington Park, Woodcliff Lake, and surrounding towns — is home to a thriving and rapidly growing Muslim community. Yet, there is no dedicated Islamic center to call our own.</p>
+      <p>We are in the process of acquiring a property — a former church at 283 Harrington Ave in Closter — that will be lovingly converted into our masjid. This transformation symbolizes the beauty of community, faith, and new beginnings. But we cannot do it without <strong>your</strong> support.</p>
+      <p>Every patron's donation — large or small — brings us one step closer to breaking ground and opening our doors to the community.</p>
+      <a href="#donate" class="btn-primary" style="margin-top:1rem;">Help Us Build This</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── DONATE CTA STRIP 2 ── -->
+<div class="donate-strip">
+  <div class="donate-strip-inner">
+    <h2>Become a Monthly Supporter</h2>
+    <p>Consistent monthly giving is the backbone of our masjid fund. Even $25/month adds up to $300/year — a powerful, sustained impact. Join our community of recurring donors and earn ongoing sadaqah jariyah.</p>
+    <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank" class="btn-gold">Start Monthly Giving</a>
+  </div>
+</div>
+
+<!-- ══ COMMUNITY BENEFITS ══ -->
+<section id="community">
+  <div class="community-inner">
+    <p class="section-eyebrow">Community Impact</p>
+    <h2 class="section-title-light">Stronger Together — For Everyone</h2>
+    <p class="community-lead">NVIC is not just a mosque — it is a civic institution committed to enriching the entire Northern Valley community, regardless of faith or background.</p>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🤝</div>
+        <h3>Interfaith Dialogue</h3>
+        <p>Regular sessions bringing together Muslim, Christian, Jewish, and other faith communities to foster mutual understanding, friendship, and peaceful coexistence.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🌍</div>
+        <h3>Celebrating Diversity</h3>
+        <p>Annual multicultural festivals, cultural showcases, and open-house events highlighting the rich tapestry of backgrounds within our community.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📚</div>
+        <h3>Islamic Education</h3>
+        <p>Weekend Islamic school, Quran classes, and adult education programs providing grounded religious knowledge and strong moral character.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏥</div>
+        <h3>Health & Wellness</h3>
+        <p>Free health screenings, mental health support, and wellness workshops open to the entire community — because caring for the body is a spiritual act.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">👨‍👩‍👧</div>
+        <h3>Family & Youth Programs</h3>
+        <p>Youth leadership programs, marriage counseling, parenting workshops, and after-school activities supporting families through every stage of life.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🕊️</div>
+        <h3>Civic Engagement</h3>
+        <p>Voter registration drives, town hall collaborations, and community events — ensuring Muslim voices contribute positively to our shared civic life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section id="services">
+  <div class="services-inner">
+    <p class="section-eyebrow" style="color:var(--green-mid);">What We Will Offer</p>
+    <h2>Planned Community Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="svc-num">01</div>
+        <div class="service-line"></div>
+        <h3>Daily & Jumu'ah Prayers</h3>
+        <p>Five daily prayers and congregational Friday Jumu'ah services with separate prayer spaces for men and women.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">02</div>
+        <div class="service-line"></div>
+        <h3>Food Pantry & Relief</h3>
+        <p>Weekly food distribution open to all community members in need, with expanded Ramadan iftar meals served nightly.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">03</div>
+        <div class="service-line"></div>
+        <h3>Funeral Services</h3>
+        <p>Islamic funeral arrangements, ghusl facilities, and bereavement support to help families navigate loss with dignity.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">04</div>
+        <div class="service-line"></div>
+        <h3>Nikah Ceremonies</h3>
+        <p>Islamic marriage ceremonies with event space for receptions and family celebrations.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">05</div>
+        <div class="service-line"></div>
+        <h3>New Muslim Support</h3>
+        <p>Dedicated programs for those embracing Islam — mentorship, learning resources, and a welcoming community network.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">06</div>
+        <div class="service-line"></div>
+        <h3>Counseling & Mediation</h3>
+        <p>Confidential pastoral counseling for individuals, couples, and families, grounded in Islamic values.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">07</div>
+        <div class="service-line"></div>
+        <h3>Eid Celebrations</h3>
+        <p>Large-scale Eid al-Fitr and Eid al-Adha prayers and community festivities open to all.</p>
+      </div>
+      <div class="service-card">
+        <div class="svc-num">08</div>
+        <div class="service-line"></div>
+        <h3>Community Hall</h3>
+        <p>Multi-purpose event space for community organizations, non-profits, and family gatherings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DONATE ══ -->
+<section id="donate">
+  <div class="donate-inner">
+    <div class="donate-goal-banner">
+      <div class="dgb-left">
+        <div class="dgb-eyebrow">🏗️ &nbsp; MASJID BUILDING FUND — ACTIVE CAMPAIGN</div>
+        <h3>We're Acquiring Our<br>Future Masjid Property</h3>
+        <p>Every dollar brings us closer to securing and transforming our property into Northern Valley's first permanent Islamic Center. Your donation is our foundation.</p>
+      </div>
+      <div class="dgb-right">
+        <div class="dgb-track"><div class="dgb-fill"></div></div>
+        <div class="dgb-meta"><strong>Help us reach our goal</strong> &nbsp;·&nbsp; Every gift matters</div>
+      </div>
+    </div>
+
+    <div class="donate-head">
+      <p class="section-eyebrow" style="color:var(--green-mid);">Support the Center</p>
+      <h2>Invest in Our Community's Future</h2>
+      <p>Your generosity builds more than a building — it builds a legacy of faith, service, and unity for Northern Valley generations to come. All donations are 100% tax-deductible.</p>
+    </div>
+
+    <div class="donate-tabs">
+      <button class="tab-btn active" onclick="showTabs('monthly', this)">Monthly Giving</button>
+      <button class="tab-btn" onclick="showTabs('once', this)">One-Time Gift</button>
+    </div>
+
+    <!-- MONTHLY TIERS — names match LaunchGood scheduled giving -->
+    <div id="monthly-tiers" class="donation-tiers">
+      <div class="tier-card">
+        <div class="tier-name">SUPPORTER</div>
+        <div class="tier-price"><sup>$</sup>25</div>
+        <div class="tier-period">per month</div>
+        <ul class="tier-perks">
+          <li>Monthly progress updates</li>
+          <li>Name in donor recognition</li>
+          <li>Community event invitations</li>
+          <li>$300/year sustained impact</li>
+        </ul>
+        <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank" class="btn-primary" style="width:100%;text-align:center;display:block;">Give $25/mo</a>
+      </div>
+      <div class="tier-card featured">
+        <div class="tier-name">SUSTAINER</div>
+        <div class="tier-price"><sup>$</sup>75</div>
+        <div class="tier-period">per month</div>
+        <ul class="tier-perks">
+          <li>All Supporter benefits</li>
+          <li>Exclusive construction updates</li>
+          <li>Recognition on donor wall</li>
+          <li>Priority program enrollment</li>
+          <li>$900/year sustained impact</li>
+        </ul>
+        <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank" class="btn-primary" style="width:100%;text-align:center;display:block;">Give $75/mo</a>
+      </div>
+      <div class="tier-card">
+        <div class="tier-name">BENEFACTOR</div>
+        <div class="tier-price"><sup>$</sup>200</div>
+        <div class="tier-period">per month</div>
+        <ul class="tier-perks">
+          <li>All Sustainer benefits</li>
+          <li>Named dedication opportunity</li>
+          <li>VIP event seating</li>
+          <li>Founding member status</li>
+          <li>$2,400/year sustained impact</li>
+        </ul>
+        <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank" class="btn-primary" style="width:100%;text-align:center;display:block;">Give $200/mo</a>
+      </div>
+    </div>
+
+    <div id="once-tiers" style="display:none">
+      <div class="one-time-donate">
+        <p>Choose a one-time gift amount — every dollar brings us closer to our goal</p>
+        <div class="amount-buttons">
+          <button class="amt-btn" onclick="setAmt(this)">$25</button>
+          <button class="amt-btn" onclick="setAmt(this)">$50</button>
+          <button class="amt-btn active" onclick="setAmt(this)">$100</button>
+          <button class="amt-btn" onclick="setAmt(this)">$250</button>
+          <button class="amt-btn" onclick="setAmt(this)">$500</button>
+          <button class="amt-btn" onclick="setAmt(this)">$1,000</button>
+        </div>
+        <a href="https://us.mohid.co/nj/njrgn/nvic/masjid/online/vfr/campaign/northern_valley_islamic_center_masjid_purchase" target="_blank" class="btn-primary">Donate Now</a>
+        <p style="margin-top:1rem;font-size:0.88rem;color:var(--text-mid);opacity:0.7;">You will be redirected to our secure payment partner (Mohid) to complete your donation.</p>
+      </div>
+    </div>
+
+    <div class="donate-tax-note">
+      <strong>Northern Valley Islamic Center is a registered 501(c)(3) non-profit organization.</strong><br>
+      All donations are fully tax-deductible. EIN available upon request at <a href="mailto:contact@nvicenter.org" style="color:var(--green-mid);">contact@nvicenter.org</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MAP / LOCATION ══ -->
+<section id="location">
+  <div class="location-inner">
+    <div class="location-text">
+      <p class="section-eyebrow">Find Us</p>
+      <h2>Our Future Home</h2>
+      <p>We are acquiring a property in the heart of Closter, New Jersey — a former church that will be lovingly transformed into the Northern Valley Islamic Center. Easily accessible from Route 9W and serving all Northern Valley communities.</p>
+      <div class="address-block">
+        <p>
+          <strong>ADDRESS</strong>
+          283 Harrington Ave<br>Closter, NJ 07624
+        </p>
+      </div>
+      <div class="address-block">
+        <p>
+          <strong>EMAIL</strong>
+          <a href="mailto:contact@nvicenter.org" style="color:var(--green-light);text-decoration:none;">contact@nvicenter.org</a>
+        </p>
+      </div>
+      <div class="address-block" style="margin-bottom:2rem;">
+        <p>
+          <strong>WEBSITE</strong>
+          <a href="https://www.nvicenter.org" style="color:var(--green-light);text-decoration:none;">www.nvicenter.org</a>
+        </p>
+      </div>
+      <a id="directions-btn" href="#" target="_blank" class="btn-primary" onclick="getDirections(event)">
+        ↗ Get Directions from My Location
+      </a>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.25);margin-top:0.6rem;">Will open Google Maps with turn-by-turn directions</p>
+    </div>
+    <div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.4937!2d-73.9647!3d40.9771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f7a6a2d5f5e5%3A0x1234567890abcdef!2s283+Harrington+Ave%2C+Closter%2C+NJ+07624!5e0!3m2!1sen!2sus!4v1234567890"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Northern Valley Islamic Center Location">
+        </iframe>
+      </div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=283+Harrington+Ave+Closter+NJ+07624" target="_blank" class="directions-btn">
+        Open in Google Maps ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FINAL DONATE CTA ══ -->
+<div class="donate-strip" style="background: linear-gradient(135deg, #1a4d1a, #2e7d32, #1a6b2a);">
+  <div class="donate-strip-inner">
+    <p style="font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.8rem;color:rgba(255,255,255,0.6);margin-bottom:0.5rem;">مَّن ذَا الَّذِي يُقْرِضُ اللَّهَ قَرْضًا حَسَنًا</p>
+    <h2>Who will lend to Allah a beautiful loan?</h2>
+    <p>The Prophet ﷺ said: <em>"Whoever builds a mosque for Allah, Allah will build for him a house in Paradise."</em> (Sahih Bukhari). Be among those who build a house for Allah in the Northern Valley. Your support — whether $25 or $25,000 — is a brick in this blessed project.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://us.mohid.co/nj/njrgn/nvic/masjid/online/vfr/campaign/northern_valley_islamic_center_masjid_purchase" target="_blank" class="btn-gold">Give Once</a>
+      <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank" class="btn-primary" style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);color:white;">Give Monthly</a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-brand">
+        <img src="logo.png" alt="NVIC" style="height:42px;">
+        <div class="nav-brand-text">
+          Northern Valley Islamic Center
+          <span>Closter, New Jersey</span>
+        </div>
+      </a>
+      <p>Serving the Muslim community of Bergen County's Northern Valley with faith, compassion, and excellence. A 501(c)(3) non-profit organization — every donation is tax-deductible.</p>
+      <div style="margin-top:1.2rem;font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.3rem;color:rgba(76,175,80,0.4);">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#prayers">Prayer Times</a>
+      <a href="#announcements">Announcements</a>
+      <a href="#need">About Us</a>
+      <a href="#community">Community</a>
+      <a href="#services">Services</a>
+      <a href="#donate">Donate</a>
+      <a href="#location">Visit Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="https://us.mohid.co/nj/njrgn/nvic/masjid/online/vfr/campaign/northern_valley_islamic_center_masjid_purchase" target="_blank">One-Time Donation</a>
+      <a href="https://www.launchgood.com/v4/scheduled-giving/charities/help_build_the_northern_valley_islamic_center/checkout" target="_blank">Monthly Giving</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:contact@nvicenter.org">contact@nvicenter.org</a>
+      <a href="https://www.nvicenter.org" target="_blank">www.nvicenter.org</a>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=283+Harrington+Ave+Closter+NJ+07624" target="_blank">283 Harrington Ave<br>Closter, NJ 07624</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Northern Valley Islamic Center · 501(c)(3) Non-Profit · All donations are tax-deductible</p>
+    <p style="font-family:'Amiri','Noto Naskh Arabic',serif;font-size:0.95rem;color:rgba(76,175,80,0.3);">الحمد لله رب العالمين</p>
+  </div>
+</footer>
+
+<script>
+// ══════════════════════════════════════════════
+// LIVE CLOCK
+// ══════════════════════════════════════════════
+function updateClock() {
+  const now = new Date();
+  const opts = { timeZone: 'America/New_York', hour: 'numeric', minute: '2-digit', second: '2-digit', hour12: true, weekday: 'long', month: 'long', day: 'numeric' };
+  document.getElementById('clock').textContent = now.toLocaleString('en-US', opts) + ' (Eastern Time)';
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ══════════════════════════════════════════════
+// PRAYER TIMES & ISLAMIC DATE — Aladhan API
+// Closter, NJ: lat 40.9733, lng -73.9616
+// Method 2 = ISNA (Islamic Society of North America)
+// ══════════════════════════════════════════════
+let prayerTimesMinutes = {};
+
+function formatTime12(timeStr) {
+  if (!timeStr) return '--:--';
+  const clean = timeStr.replace(/ \(.*\)/, '');
+  const [h, m] = clean.split(':').map(Number);
+  const ampm = h >= 12 ? 'PM' : 'AM';
+  const hour12 = h % 12 || 12;
+  return `${hour12}:${String(m).padStart(2, '0')} <span>${ampm}</span>`;
+}
+
+function timeToMinutes(timeStr) {
+  if (!timeStr) return 0;
+  const clean = timeStr.replace(/ \(.*\)/, '');
+  const [h, m] = clean.split(':').map(Number);
+  return h * 60 + m;
+}
+
+function applyPrayerTimes(timings, hijri) {
+  document.getElementById('time-fajr').innerHTML = formatTime12(timings.Fajr);
+  document.getElementById('time-dhuhr').innerHTML = formatTime12(timings.Dhuhr);
+  document.getElementById('time-asr').innerHTML = formatTime12(timings.Asr);
+  document.getElementById('time-maghrib').innerHTML = formatTime12(timings.Maghrib);
+  document.getElementById('time-isha').innerHTML = formatTime12(timings.Isha);
+  document.getElementById('time-sunrise').textContent = timings.Sunrise ? timings.Sunrise.replace(/ \(.*\)/, '') : '--:--';
+
+  prayerTimesMinutes = {
+    fajr: timeToMinutes(timings.Fajr),
+    dhuhr: timeToMinutes(timings.Dhuhr),
+    asr: timeToMinutes(timings.Asr),
+    maghrib: timeToMinutes(timings.Maghrib),
+    isha: timeToMinutes(timings.Isha)
+  };
+  highlightPrayer();
+
+  if (hijri) {
+    document.getElementById('hijri-date').textContent = `${hijri.day} ${hijri.month.en} ${hijri.year} AH`;
+  }
+}
+
+// Approximate seasonal fallback times for Closter, NJ (so page never looks broken)
+function getFallbackTimes() {
+  const month = new Date().getMonth(); // 0-11
+  // Rough seasonal averages for 40.97°N latitude, ISNA method
+  const seasonal = [
+    { Fajr:'05:58', Sunrise:'07:16', Dhuhr:'12:05', Asr:'14:45', Maghrib:'16:52', Isha:'18:12' }, // Jan
+    { Fajr:'05:38', Sunrise:'06:50', Dhuhr:'12:09', Asr:'15:15', Maghrib:'17:27', Isha:'18:44' }, // Feb
+    { Fajr:'05:04', Sunrise:'06:12', Dhuhr:'12:07', Asr:'15:40', Maghrib:'18:01', Isha:'19:16' }, // Mar
+    { Fajr:'05:20', Sunrise:'06:22', Dhuhr:'12:59', Asr:'16:40', Maghrib:'19:35', Isha:'20:49' }, // Apr (DST)
+    { Fajr:'04:34', Sunrise:'05:41', Dhuhr:'12:56', Asr:'16:58', Maghrib:'20:08', Isha:'21:27' }, // May
+    { Fajr:'04:12', Sunrise:'05:23', Dhuhr:'12:59', Asr:'17:08', Maghrib:'20:28', Isha:'21:54' }, // Jun
+    { Fajr:'04:25', Sunrise:'05:35', Dhuhr:'13:02', Asr:'17:06', Maghrib:'20:25', Isha:'21:46' }, // Jul
+    { Fajr:'04:50', Sunrise:'05:57', Dhuhr:'12:58', Asr:'16:46', Maghrib:'19:54', Isha:'21:08' }, // Aug
+    { Fajr:'05:16', Sunrise:'06:22', Dhuhr:'12:44', Asr:'16:11', Maghrib:'19:03', Isha:'20:13' }, // Sep
+    { Fajr:'05:42', Sunrise:'06:48', Dhuhr:'12:30', Asr:'15:32', Maghrib:'18:08', Isha:'19:19' }, // Oct
+    { Fajr:'05:12', Sunrise:'06:20', Dhuhr:'11:22', Asr:'14:00', Maghrib:'16:22', Isha:'17:38' }, // Nov
+    { Fajr:'05:39', Sunrise:'06:53', Dhuhr:'11:29', Asr:'14:05', Maghrib:'16:17', Isha:'17:37' }, // Dec
+  ];
+  return seasonal[month];
+}
+
+async function fetchPrayerTimes() {
+  try {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const yyyy = today.getFullYear();
+
+    const resp = await fetch(
+      `https://api.aladhan.com/v1/timings/${dd}-${mm}-${yyyy}?latitude=40.9733&longitude=-73.9616&method=2&school=0`
+    );
+    const data = await resp.json();
+
+    if (data.code === 200 && data.data && data.data.timings) {
+      applyPrayerTimes(data.data.timings, data.data.date ? data.data.date.hijri : null);
+      return; // success
+    }
+    throw new Error('Invalid API response');
+  } catch (err) {
+    console.warn('Aladhan API unavailable, using seasonal estimates:', err.message);
+    // Apply fallback so the page never shows "Unavailable"
+    const fb = getFallbackTimes();
+    applyPrayerTimes(fb, null);
+    document.getElementById('hijri-date').textContent = 'Islamic Calendar';
+    // Add a note that these are estimates
+    document.querySelector('.prayer-disclaimer').innerHTML +=
+      ' <strong style="color:#E8C96B;">(Showing approximate times — live times will appear once connected to the internet.)</strong>';
+  }
+}
+fetchPrayerTimes();
+
+// ══════════════════════════════════════════════
+// HIGHLIGHT CURRENT PRAYER
+// ══════════════════════════════════════════════
+function highlightPrayer() {
+  const now = new Date();
+  const et = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const t = et.getHours() * 60 + et.getMinutes();
+
+  const order = ['fajr', 'dhuhr', 'asr', 'maghrib', 'isha'];
+  let active = 'isha';
+  for (let i = order.length - 1; i >= 0; i--) {
+    if (prayerTimesMinutes[order[i]] && t >= prayerTimesMinutes[order[i]]) {
+      active = order[i];
+      break;
+    }
+  }
+  if (prayerTimesMinutes.fajr && t < prayerTimesMinutes.fajr) {
+    active = 'isha';
+  }
+  order.forEach(p => {
+    const el = document.getElementById('card-' + p);
+    if (el) el.classList.toggle('active', p === active);
+  });
+}
+setInterval(highlightPrayer, 60000);
+
+// ══════════════════════════════════════════════
+// DONATION TABS
+// ══════════════════════════════════════════════
+function showTabs(type, btn) {
+  ['monthly-tiers', 'once-tiers'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+  const show = document.getElementById(type + '-tiers');
+  if (show) show.style.display = type === 'once' ? 'block' : 'grid';
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function setAmt(btn) {
+  document.querySelectorAll('.amt-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+// ══════════════════════════════════════════════
+// DIRECTIONS
+// ══════════════════════════════════════════════
+function getDirections(e) {
+  e.preventDefault();
+  const dest = encodeURIComponent('283 Harrington Ave, Closter, NJ 07624');
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const url = `https://www.google.com/maps/dir/${pos.coords.latitude},${pos.coords.longitude}/${dest}`;
+        window.open(url, '_blank');
+      },
+      () => {
+        window.open(`https://www.google.com/maps/dir/?api=1&destination=${dest}`, '_blank');
+      }
+    );
+  } else {
+    window.open(`https://www.google.com/maps/dir/?api=1&destination=${dest}`, '_blank');
+  }
+}
+
+// ══════════════════════════════════════════════
+// SCROLL ANIMATIONS
+// ══════════════════════════════════════════════
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.stat-card, .benefit-card, .service-card').forEach(el => {
+  observer.observe(el);
+});
+
+// ══════════════════════════════════════════════
+// GOOGLE SHEETS ANNOUNCEMENTS CMS
+// Replace SHEET_ID and SHEET_NAME with your actual values
+// Sheet should have columns: Date, Title, Message
+// Publish sheet to web as CSV
+// ══════════════════════════════════════════════
+async function fetchAnnouncements() {
+  // To use Google Sheets as CMS:
+  // 1. Create a Google Sheet with columns: Date | Title | Message
+  // 2. Go to File > Share > Publish to web > Choose CSV
+  // 3. Replace the URL below with your published CSV URL
+  //
+  // Example URL format:
+  // https://docs.google.com/spreadsheets/d/e/YOUR_SHEET_ID/pub?gid=0&single=true&output=csv
+
+  const SHEET_URL = ''; // <-- PUT YOUR PUBLISHED GOOGLE SHEET CSV URL HERE
+
+  if (!SHEET_URL) return; // No sheet configured yet
+
+  try {
+    const resp = await fetch(SHEET_URL);
+    const csvText = await resp.text();
+    const rows = csvText.split('\n').slice(1); // skip header
+
+    if (rows.length === 0 || (rows.length === 1 && rows[0].trim() === '')) return;
+
+    const container = document.getElementById('announcements-list');
+    container.innerHTML = '';
+
+    rows.forEach(row => {
+      if (!row.trim()) return;
+      // Simple CSV parse (for basic content without commas in values)
+      const cols = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
+      if (!cols || cols.length < 3) return;
+
+      const date = cols[0].replace(/"/g, '').trim();
+      const title = cols[1].replace(/"/g, '').trim();
+      const message = cols[2].replace(/"/g, '').trim();
+
+      const card = document.createElement('div');
+      card.className = 'announce-card';
+      card.innerHTML = `
+        <div class="announce-date">${date}</div>
+        <h3>${title}</h3>
+        <p>${message}</p>
+      `;
+      container.appendChild(card);
+    });
+  } catch (err) {
+    console.log('Announcements not loaded:', err);
+  }
+}
+fetchAnnouncements();
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
